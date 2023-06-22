@@ -1,5 +1,13 @@
-$bgColor: blue;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+$corDeFundo: #040714;
 
 body{
-  background-color: $bgColor;
+  background-color: $corDeFundo;
 }
