@@ -20,11 +20,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: Avenir, sans-serif;
 }
 
 body{
   background-color: variaveis.$corDeFundo;
-  font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px){
