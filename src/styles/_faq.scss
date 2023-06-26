@@ -35,6 +35,25 @@
       &__answer{
         height: 0;
         overflow: hidden;
+        padding: 0 24px;
+        transition: 0.5s;
+      }
+
+      &--is-open{
+        .faq__questions__item__question::after{
+          content: '-';
+        }
+
+        .faq__questions__item__answer{
+        height: auto;
+        padding-bottom: 24px;
+        transition: 0.5s;
+
+        & ul li{
+          display: list-item;
+          margin: 16px 0;
+        }
+        }
       }
     }
   }
