@@ -5,6 +5,7 @@
 @use 'available-devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 
 @font-face {
   font-family: Avenir;
@@ -71,17 +72,43 @@ body{
 }
 
 .button{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 60px;
   font-size: 18px;
   font-weight: bold;
   color: variaveis.$corTextoSecundario;
-  background-color: #6421ff;
+  background-color: variaveis.$bgBotaoPrimario;
   text-transform: uppercase;
   border-radius: 4px;
-  margin-top: 2vw;
-  margin-bottom: 8px;
+  padding: 8px 14px;
+  letter-spacing: 1px;
+  border: 1px solid variaveis.$bgBotaoPrimario;
+
+  &:hover{
+    background-color: lighten(variaveis.$bgBotaoPrimario, 3%);
+  }
+
+  &--secondary{
+    background-color: variaveis.$bgBotaoSecundario;
+    border-color: variaveis.$bgBotaoSecundario;
+
+    &:hover{
+      background-color: lighten(variaveis.$bgBotaoSecundario, 3%);
+    }
+  }
+
+  &--dark{
+    background-color: rgba(variaveis.$bgBotaoDark, 0.8);
+    border-color: variaveis.$corTextoSecundario;
+
+    &:hover{
+      background-color: variaveis.$corTextoSecundario;
+      color: variaveis.$corDeFundo;
+    }
+  }
 }
 
 .image-text-section{
